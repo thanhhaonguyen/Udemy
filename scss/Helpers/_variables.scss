@@ -1,0 +1,57 @@
+// colors
+$colors: (
+    'dark': #29303b,
+    'grey': #8a92a3,
+    'darkGrey': #505763,
+    'lightGrey': #dfdfdf,
+    'rose': #ec5252,
+    'blackRose': #8b1026e8,
+    'purple': #6E1A52,
+    'white': #ffffff,
+    'black': #000000,
+    'light': #f7f8fa,
+    'darkLight': #ebebeb,
+    'ocean': #007791,
+    'lightTurquoise': #f2fbfc,
+    'star': #f4c150,
+);
+
+// font-sizes
+$font-sizes: (
+    'fs-1': 40px,
+    'fs-2': 30px,
+    'fs-3': 25px,
+    'fs-4': 20px,
+    'fs-5': 18px,
+    'fs-6': 16px,
+    'fs-7': 14px,
+    'fs-8': 13px,
+    'fs-9': 12px,
+    'fs-10': 9px
+);
+
+// font-weights
+$font-weights: (
+    'fw-bolder': 800,
+    'fw-bold': 700,
+    'fw-medium': 600,
+    'fw-regular': 400,
+    'fw-light': 300
+);
+
+// font-family
+$font-family: (
+    'roboto': ('Roboto Condensed', sans-serif),
+    'lato': ('Lato', sans-serif)
+);
+
+// responsive
+$responsive: (
+    'smallMobile': 576px,
+    'mobile': 768px,
+    'tablet': 992px,
+    'desktops': 1200px
+);
+
+// spacing
+$defaultSpacing: 10px;

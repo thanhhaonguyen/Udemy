@@ -1,0 +1,48 @@
+/*Footer*/
+.footer {
+    margin-top: spacing(12);
+    &__info {
+        &__content {
+            width: 90%;
+            margin: spacing(2) auto 0;
+            .footer__item {
+                list-style: none;
+                font-size: fontSize("fs-7");
+                line-height: spacing(3);
+                a {
+                    color: color("ocean");
+                }
+                &--emp li:first-child,
+                &--emp li:nth-child(2) {
+                    font-weight: fontWeight("fw-bolder");
+                }
+            }
+        }
+        border-top: spacing(0.1) solid color("lightGrey");
+        border-bottom: spacing(0.1) solid color("lightGrey");
+    }
+    &__copyright {
+        width: 90%;
+        margin: 0 auto;
+        color: color("ocean");
+        font-size: fontSize("fs-7");
+        padding: spacing(1) 0;
+        img {
+            display: inline;
+            width: spacing(15);
+        }
+        p {
+            display: inline;
+        }
+        a {
+            color: color("ocean");
+        }
+        ul {
+            list-style: none;
+            margin-top: spacing(1.2);
+            li { 
+                display: inline;
+            }
+        }
+    }
+}

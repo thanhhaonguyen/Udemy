@@ -1,0 +1,44 @@
+// function get color from colors
+@function color($colorName) {
+    @if map-has-key($map: $colors, $key: $colorName) {
+        @return map-get($map: $colors, $key: $colorName);
+    }
+    @return "";
+}
+
+// function get font-size from font-sizes
+@function fontSize($fontSize) {
+    @if map-has-key($map: $font-sizes, $key: $fontSize) {
+        @return map-get($map: $font-sizes, $key: $fontSize);
+    }
+    @return "";
+}
+
+// function get font-weight from font-weights
+@function fontWeight($fontWeight) {
+    @if map-has-key($map: $font-weights, $key: $fontWeight) {
+        @return map-get($map: $font-weights, $key: $fontWeight);
+    }
+    @return "";
+}
+
+// function get font-family from font-family
+@function fontFamily($fontFamily) {
+    @if map-has-key($map: $font-family, $key: $fontFamily) {
+        @return map-get($map: $font-family, $key: $fontFamily);
+    }
+    @return "";
+}
+
+// function get screen type from responsive
+@function responsive($screenType) {
+    @if map-has-key($map: $responsive, $key: $screenType) {
+        @return map-get($map: $responsive, $key: $screenType);
+    }
+    @return "";
+}
+
+// function handle spacing
+@function spacing($num) {
+    @return $num * $defaultSpacing
+}

@@ -1,0 +1,45 @@
+// Header
+@mixin textHeader($color, $fontSize) {
+    color: $color;
+    font-size: $fontSize;
+}
+@mixin bgHeader($bgColor, $padding, $borderRadius, $borderColor) {
+    background-color: $bgColor;
+    padding: $padding;
+    border-radius: $borderRadius;
+    border-color: $borderColor;
+}
+
+// Udemy Options
+@mixin optionStyle($bgColor, $h3Color, $pColor, $btnColor) {
+    background-color: $bgColor;
+    margin-top: spacing(10);
+    .row {
+        width: 50%;
+        margin: 0 auto;
+        transform: scale(1.2);
+        .option__text {
+            position: absolute;
+            top: 50%;
+            left: spacing(4);
+            transform: translateY(-50%);
+            h3 {
+                color: $h3Color;
+                font-weight: fontWeight("fw-bolder");
+            }
+            p {
+                color: $pColor;
+            }
+            button {
+                font-weight: fontWeight("fw-bolder");
+                background-color: $btnColor;
+                font-size: fontSize("fs-6");
+                margin-top: spacing(2);
+            }
+        }
+    }
+    img {
+        width: 100%;
+        display: block;
+    }
+}

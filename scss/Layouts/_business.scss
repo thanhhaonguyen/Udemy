@@ -1,0 +1,25 @@
+/*Business*/
+.business {
+    border-top: spacing(0.1) solid color("lightGrey");
+    border-bottom: spacing(0.1) solid color("lightGrey");
+    padding: spacing(1) 0;
+    &__content {
+        width: 90%;
+        margin: 0 auto;
+        h3 {
+            margin: spacing(2) 0;
+            font-weight: fontWeight("fw-bolder");
+        }
+        .business__logo {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 50%;
+            margin: spacing(4) auto spacing(2);
+            img {
+                height: spacing(3);
+                margin: 0 spacing(1.5);
+            }
+        }
+    }
+}

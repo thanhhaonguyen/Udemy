@@ -1,0 +1,12 @@
+/*Udemy options*/
+.udemy-options {
+    margin: spacing(10) 0;
+    &__content {
+        .options__instructor {
+            @include optionStyle(color("light"), color("dark"), color("dark"),color("ocean"));
+        }
+        .options__business {
+            @include optionStyle(color("ocean"), color("white"), color("white"),color("rose"));
+        }
+    }
+}

@@ -1,0 +1,111 @@
+/* Header */
+.header {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: spacing(1.2) 0 !important;
+    &__logo {
+        img {
+            width: spacing(11);
+            height: spacing(3.2);
+        }
+    }
+    &_category {
+        width: 8%;
+        span {
+            color: color("dark");
+        }
+        a {
+            color: color("grey");
+            font-size: fontSize("fs-8");
+        }
+        a:hover {
+            @include bgHeader(rgba(20, 23, 28, 0.05), spacing(1.2), spacing(0.2), color("darkGrey"));
+            border: 1px solid color('grey');
+        }
+    }
+    &__search {
+        width: 42% !important;
+        .input-group {
+            input {
+                border: none !important;
+                border-radius: spacing(0.1);
+                background-color: rgba(20, 23, 28, 0.05);
+                padding: spacing(2.1) spacing(1.2);
+            }
+            input::placeholder {
+                font-size: fontSize("fs-8");
+            }
+            .header__search--btn span {
+                border: none !important;
+                border-radius: spacing(0.1);
+                background-color: #14171c0d !important;
+                color: color("rose");
+            }
+            .header__search--btn span:hover {
+                background-color: color("rose") !important;
+                color: color("white");
+                cursor: pointer;
+            }
+        }
+    }
+    &__try {
+        width: 11%;
+        a > span {
+            @include textHeader(color("darkGrey"), fontSize("fs-8"));
+        }
+        a > span:hover {
+            @include bgHeader(rgba(20, 23, 28, 0.05), spacing(1.2), spacing(0.2), color("darkGrey"));
+            border: 1px solid color('grey');
+        }
+    }
+    &__instructor {
+        width: 10%;
+        a > span {
+            @include textHeader(color("darkGrey"), fontSize("fs-8"));
+        }
+        a > span:hover {
+            @include bgHeader(rgba(20, 23, 28, 0.05), spacing(1.2), spacing(0.2), color("darkGrey"));
+            border: 1px solid color("grey");
+        }
+    }
+    &__divider {
+        border-left: spacing(.1) solid color("grey");
+        height: 40px;
+    }
+    &__cart {
+        width: 4%;
+        a {
+            color: color("grey");
+            font-size: fontSize("fs-6");
+            line-height: 10px;
+        }
+        a:hover {
+            background-color: rgba(20, 23, 28, 0.05);
+            padding: spacing(1.2);
+            border-radius: 50%;
+            border: 1px solid color('grey');
+        }
+    }
+    &__login {
+        a {
+            border-radius: spacing(.2);
+            padding: spacing(.8) spacing(1.2);
+            font-weight: fontWeight("fw-bolder");
+        }
+        a:first-child {
+            color: color("darkGrey");
+        }
+        a:last-child {
+            background-color: color("rose");
+            transition: all .6s;
+        }
+        a:last-child:hover {
+            background-color: color("blackRose");
+            border-color: transparent !important;
+        }
+    }
+}

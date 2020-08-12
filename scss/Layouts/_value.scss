@@ -1,0 +1,42 @@
+/*Value*/
+.value {
+    border-top: spacing(0.1) solid color("lightGrey");
+    border-bottom: spacing(0.1) solid color("lightGrey");
+    padding: spacing(1) 0;
+    &__content {
+        width: 90%;
+        margin: 0 auto;
+        .value__item {
+            width: 20%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: spacing(1.2) 0;
+            .value__icon {
+                margin-right: spacing(1);
+                i {
+                    font-size: fontSize("fs-5");
+                    text-align: center;
+                    height: spacing(5);
+                    width: spacing(5);
+                    line-height: spacing(5);
+                    border-radius: 50%;
+                    border: spacing(0.1) solid color("white");
+                    background-color: color("lightTurquoise");
+                    color: color("ocean");
+                }
+            }
+            .value__text {
+                padding: 0;
+                p {
+                    font-size: fontSize("fs-7");
+                    margin: 0;
+                }
+                h5 {
+                    font-size: fontSize("fs-6");
+                    font-weight: fontWeight("fw-bolder");
+                }
+            }
+        }
+    }
+}

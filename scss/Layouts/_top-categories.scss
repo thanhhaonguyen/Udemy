@@ -1,0 +1,24 @@
+/*top-categories*/
+.top-categories {
+    width: 90%;
+    margin: spacing(4) auto;
+    &__content {
+        h3 {
+            margin-bottom: spacing(2);
+            font-weight: fontWeight("fw-bolder");
+        }
+        .top-categories__item {
+            margin-bottom: spacing(3);
+            img {
+                width: 100%;
+                display: block;
+            }
+            h4 {
+                color: color("dark");
+                margin-bottom: spacing(2);
+                font-size: fontSize("fs-5");
+                font-weight: fontWeight("fw-bolder");
+            }
+        }
+    }
+}

@@ -1,0 +1,129 @@
+/*Viewing-courses*/
+.viewing-courses {
+    margin: spacing(4) 0;
+    &__content {
+        width: 90%;
+        margin: 0 auto;
+        h3 {
+            margin: 0 0 spacing(1.5);
+            font-weight: fontWeight("fw-bolder");
+        }
+        .student-courses {
+            &__content {
+                position: relative;
+                box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px 0 rgba(20, 23, 28, 0.1) !important;
+                margin: spacing(1.5) spacing(1.5) 0 0 !important;
+                border-radius: spacing(0.2) !important;
+                img {
+                    width: 100%;
+                    display: block;
+                    border-bottom: 1px solid color("darkLight");
+                }
+                h5 {
+                    font-size: fontSize("fs-7");
+                    font-weight: fontWeight("fw-bolder");
+                }
+                p {
+                    font-size: fontSize("fs-8");
+                    color: color("darkGrey");
+                    font-weight: fontWeight("fw-regular");
+                }
+                .course__bestseller {
+                    position: absolute;
+                    top: 3%;
+                    left: 0;
+                    padding: spacing(0.3) spacing(1.2) spacing(0.3) spacing(0.8);
+                    background-color: color("star");
+                    color: color("black");
+                    font-size: fontSize("fs-10");
+                    font-weight: fontWeight("fw-bolder");
+                    box-shadow: 2px 2px 3px 2px rgba(20, 23, 28, 0.2) !important;
+                }
+                .course__bestseller:before,
+                .course__bestseller:after {
+                    content: "";
+                    position: absolute;
+                    width: 0;
+                    border-left: 10px solid transparent;
+                    border-right: 10px solid transparent;
+                }
+                .course__bestseller:after {
+                    left: 91%;
+                    top: 27%;
+                    width: 0;
+                    border-top: 8px solid color("star");
+                    transform: rotate(-90deg);
+                }
+                .courses__rate {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    margin: spacing(1.5) 0 0 0;
+                    font-size: fontSize("fs-8");
+                    color: color("darkGrey");
+                    &__star {
+                        color: color("star");
+                    }
+                    span:nth-child(2) {
+                        margin-left: spacing(0.6);
+                        font-weight: fontWeight("fw-bolder");
+                    }
+                    span:last-child {
+                        margin-left: spacing(0.6);
+                    }
+                }
+                .courses__cost {
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    margin: spacing(1.5) 0 0 0;
+                    font-size: fontSize("fs-8");
+                    color: color("darkGrey");
+                    span:first-child {
+                        text-decoration: line-through;
+                        margin-right: spacing(1);
+                    }
+                    span:last-child {
+                        font-size: fontSize("fs-6");
+                        color: color("black");
+                        font-weight: fontWeight("fw-bolder");
+                    }
+                }
+            }
+            &__content:hover {
+                cursor: pointer;
+                box-shadow: 1px 1px 4px 4px rgba(20, 23, 28, 0.1) !important;
+            }
+            .slick-slide {
+                margin: spacing(1.6) spacing(1) spacing(1) spacing(1) !important;
+            }
+            /* the parent */
+            .slick-list {
+                margin: 0 spacing(-1) !important;
+            }
+            .slick-prev:before,
+            .slick-next:before {
+                color: color("lightGrey");
+                font-size: spacing(5.5);
+                padding: spacing(0.5);
+                transition: all 0.3s;
+            }
+            .slick-next {
+                right: spacing(-0.6);
+                top: spacing(14.5);
+            }
+            .slick-prev {
+                left: spacing(-5.1);
+                top: spacing(14.5);
+                z-index: 10;
+                opacity: 0;
+            }
+            .slick-prev.slick-disabled:before,
+            .slick-next.slick-disabled:before,
+            .slick-prev:before,
+            .slick-next:before {
+                opacity: 1 !important;
+            }
+        }
+    }
+}

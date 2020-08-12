@@ -1,0 +1,26 @@
+/* Global */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+header, section, footer, aside, nav, main, article, figure {
+    display: block;
+}
+
+html, body {
+    font-family: fontFamily('lato');
+    scroll-behavior: smooth;
+    font-size: spacing(1.6);
+}
+
+a {
+    text-decoration: none !important;
+}
+
+p {
+    margin: 0 !important;
+}

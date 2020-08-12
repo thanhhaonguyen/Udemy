@@ -1,0 +1,33 @@
+/*Criteria*/
+.criteria {
+    background: linear-gradient(-45deg, color('rose') 0%, color('purple') 100%);
+    &__content {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .criteria__item{
+            width: 20%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: spacing(1.2) 0;
+            .criteria__icon {
+                font-size: fontSize('fs-1');
+                text-align: center;
+                padding: 0 spacing(2) 0 0;
+            }
+            .criteria__text {
+                padding: 0;
+                p {
+                    font-size: fontSize('fs-7');
+                    margin: 0;
+                }
+                h5 {
+                    font-size: fontSize('fs-6');
+                }
+            }
+        }
+    }
+}

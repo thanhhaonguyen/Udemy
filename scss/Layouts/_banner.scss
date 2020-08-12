@@ -1,0 +1,26 @@
+/*Banner*/
+.banner {
+    background-image: url(https://udemy-images.udemy.com/browse_components/shared-assets/purple-intersect.svg);
+    background-color: color("purple");
+    background-position: center;
+    background-repeat: repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    &__content {
+        padding: spacing(5) 0;
+        color: color("white");
+        letter-spacing: spacing(.1);
+        h1 {
+            font-size: fontSize("fs-2");
+            font-weight: fontWeight("fw-bolder");
+        }
+        p {
+            font-size: fontSize("fs-5");
+        }
+        button {
+            font-weight: fontWeight("fw-bolder");
+        }
+    }
+}

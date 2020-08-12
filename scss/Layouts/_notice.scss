@@ -1,0 +1,45 @@
+/*Notice*/
+.notice {
+    background-image: url('https://img-b.udemycdn.com/notices/home_banner/image/048e0cdc-3e71-47dc-ae30-e9ac7a3504b5.jpg');
+    height: spacing(52);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: color("white");
+    &__content {
+        width: 30%;
+        margin-left: spacing(8);
+        line-height: spacing(3);
+        h1 {
+            font-weight: fontWeight('fw-bolder');
+        }
+        p {
+            font-size: fontSize('fs-5');
+        }
+        .input-group {
+            margin-top: spacing(1.5);
+        }
+        input {
+            padding: spacing(2.5) spacing(1.5);
+            font-size: fontSize('fs-4');
+            font-weight: fontWeight('fw-light');
+            border: none !important;
+        }
+        input::placeholder {
+            font-size: fontSize('fs-4');
+            font-weight: fontWeight('fw-light');
+        }
+        .notice--btn-search span {
+            border: none !important;
+            color: color("rose");
+        }
+        .notice--btn-search span:hover {
+            color: color("white");
+            background-color: color("rose") !important;
+            cursor: pointer;
+        }
+    }
+}
